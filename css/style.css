@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+input::-webkit-input-placeholder{
+color:white;
+}
+
+/*@import url(//fonts.loli.net/earlyaccess/notosansscsliced.css);*/
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.bgo{
+	background: url(https://ae01.alicdn.com/kf/Hc5326f0b89b44dceb40b8703ba3b7e907.png);
+    background-size: cover;
+    filter: brightness(0.9);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+html {
+    font-family: 'Noto Sans SC Sliced', PingFangSC-Light, Microsoft YaHei UI, Microsoft YaHei, helvetica, sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+/*form,
+input,
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+input::-webkit-input-placeholder {
+    color: #ccc;
+    letter-spacing: 2px;
+    font-size: 16px;
+}*/
+
+ul,
+li {
+    display: block;
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+#menu {
+    width: 50px;
+    height: 50px;
+    transform: scale(0.8);
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    z-index: 2000000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#menu i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 24px auto;
+    width: 25px;
+    height: 3px;
+    background: #ddd;
+    border-radius:25px;
+}
+
+#menu i:before {
+    content: '';
+    width: 15px;
+    height: 3px;
+    top: -8px;
+    background: #ddd;
+    position: absolute;
+    right: 0;
+    border-radius:25px;
+}
+
+#menu i:after {
+    content: '';
+    width: 13px;
+    height: 3px;
+    bottom: -8px;
+    background: #ddd;
+    position: absolute;
+    left: 0;
+    border-radius:25px;
+}
+
+#menu.on {
+    right: 380px;
+    background: rgba(1,1,1,0.5);
+    border-radius: 25px;
+   /* box-shadow: 0 6px 8px rgba(36, 159, 253, .3);*/
+}
+
+#menu.on i {
+    width: 20px;
+    background: #fff;
+}
+
+#menu.on i:before {
+    top: -5px;
+    transform: rotate(45deg);
+    width: 14px;
+    right: -1px;
+    left: auto;
+    background: #fff;
+}
+
+#menu.on i:after {
+    bottom: -5px;
+    transform: rotate(-45deg);
+    width: 14px;
+    right: -1px;
+    left: auto;
+    background: #fff;
+}
+
+.list {
+    width: 337px;
+    padding: 0 20px;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
+    right: 0px;
+    z-index: 2000;
+    background: rgba(1,1,1,0.7);
+    transition: 0.3s all linear;
+}
+.list.closed {
+    right: -380px;
+}
+
+.list ul {
+    width: 330px;
+    float: left;
+    padding: 0 0 20px;
+    margin-bottom: 20px;
+}
+
+.list ul li {
+    float: left;
+    margin: 5px;
+    width: 100px;
+    height: 30px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.list ul li a {
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.2s all linear;
+    height: 100%;
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    background: rgba(0,0,0,0.3);
+    text-align: left;
+    font-size: 12px;
+}
+
+.list ul li a i {
+    margin-right: 5px;
+    margin-left: 15px;
+    transition: 0.2s all linear;
+}
+
+.list ul li a i.iconfont {
+    font-size: 14px;
+}
+
+.list ul li:hover a {
+    color: #fff;
+    background-color: #29f;
+    background-image: linear-gradient(135deg, rgba(35, 153, 255) 0%, rgba(84, 175, 253) 100%);
+    box-shadow: 0 3px 3px rgba(0, 40, 70, .3);
+}
+
+.list ul li:hover a i {
+    color: #fff !important;
+}
+
+.list ul li.title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 30px 0 0;
+    text-align: left;
+    text-indent: 10px;
+    /*border-bottom: 1px dashed #dedede;*/
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list ul li.title i {
+    color: #29f;
+    margin-right: 5px;
+    font-weight: normal;
+}
+.logo{
+    position: absolute;
+    z-index: 99;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    opacity: 0.9;
+}
+@media (max-width: 640px) {
+    .list {
+        width: 227px;
+    }
+    .list ul {
+        width: 220px;
+    }
+    #menu {
+        top: 5px;
+    }
+      #menu.on {
+        right: 270px;
+    }
+.bgo{
+    	background: url(https://ae01.alicdn.com/kf/H6743d0c27b2846c2a199ff661e435189b.png);
+        background-size: cover;
+    }
+.logo{
+width: 35%;
+}
+.ko{
+	height: 158px;
+	overflow-y: scroll;
+}
+}
+.ssln:hover{
+            background: #f2f2f2;
+        }
