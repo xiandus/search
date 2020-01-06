@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+/*
+网址：https://xiandu.me
+github：https://github.com/xiandus/search
+                     XianDu，2020.1.6
+*/
+
 input::-webkit-input-placeholder{
 color:white;
 }
