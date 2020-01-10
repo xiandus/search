@@ -18,3 +18,11 @@ Wap
 ## 演示    
  
 [https://xiandu.me/](https://xiandu.me/)  
+
+搜索栏取自 [SEOGO的钛导航](https://www.seogo.me/)
+
+菜单栏取自 [简单搜索](https://github.com/5iux/sou)  
+
+影视功能取自 [i5看视频](https://github.com/yumusb/I5Player) 
+
+## 十分感谢三位作者，谢谢！影视功能还在制作中
