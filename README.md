@@ -15,6 +15,8 @@ Wap
 ![闲渡搜索](https://ae01.alicdn.com/kf/U611698f4247d4701b47b88ac405064681.jpg
 )
 
+#2020.1.14更新，添加影视搜索功能
+
 ## 演示    
  
 [https://xiandu.me/](https://xiandu.me/)  
@@ -25,4 +27,4 @@ Wap
 
 影视功能取自 [i5看视频](https://github.com/yumusb/I5Player) 
 
-## 十分感谢三位作者，谢谢！影视功能还在制作中
+## 十分感谢三位作者，谢谢！
